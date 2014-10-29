@@ -20,7 +20,7 @@ module.exports = (grunt) ->
   grunt.initConfig
     pkg: grunt.file.readJSON 'package.json'
     banner: '/*!\n* <%=pkg.name %> v<%=pkg.version%>\n' +
-            '* Copyright 2013-<%=grunt.template.today("yyyy")%> Addepar Inc.\n' +
+            '* Copyright 2012-<%=grunt.template.today("yyyy")%> Addepar Inc.\n' +
             '* See LICENSE.\n*/',
 
     clean:
@@ -124,12 +124,12 @@ module.exports = (grunt) ->
         options:
           banner: '<%=banner%>'
         files:
-          src: ['dist/js/*']
+          src: ['dist/*.js']
       css:
         options:
           banner: '<%=banner%>'
         files:
-          src: ['dist/css/*']
+          src: ['dist/*.css']
 
     ###
       Reads the projects .jshintrc file and applies coding
