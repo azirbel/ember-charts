@@ -1,5 +1,5 @@
 /*!
-* ember-charts v0.3.4
+* ember-charts v0.3.5
 * Copyright 2012-2014 Addepar Inc.
 * See LICENSE.
 */
@@ -159,7 +159,7 @@ Ember.AddeparMixins.StyleBindingsMixin = Ember.Mixin.create({
 
 Ember.Charts = Ember.Namespace.create();
 
-Ember.Charts.VERSION = '0.3.4';
+Ember.Charts.VERSION = '0.3.5';
 
 if ((_ref = Ember.libraries) != null) {
   _ref.register('Ember Charts', Ember.Charts.VERSION);
