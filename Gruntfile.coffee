@@ -163,7 +163,7 @@ module.exports = (grunt) ->
         tasks: [ "emberTemplates", "neuter", "uglify", "usebanner:js" ]
       less:
         files: [ "app/assets/**/*.less", "app/assets/**/*.cmss", "src/**/*.less" ]
-        tasks: ["less", "copy"]
+        tasks: [ "less", "copy", "usebanner:css" ]
       copy:
         files: [ "app/index.html" ]
         tasks: [ "copy" ]
@@ -179,6 +179,20 @@ module.exports = (grunt) ->
     ###
     build_test_runner_file:
       all: [ "test/**/*_test.js" ]
+
+    "release-it":
+      options:
+        "pkgFiles": ["package.json", "bower.json"]
+        "commitMessage": "Release %s"
+        "tagName": "v%s"
+        "tagAnnotation": "Release %s"
+        "increment": "patch"
+        "buildCommand": "grunt dist"
+        "distRepo": "-b gh-pages git@github.com:azirbel/ember-charts"
+        "distStageDir": ".stage"
+        "distBase": "gh_pages"
+        "distFiles": ["**/*"]
+        "publish": false
 
   ###
     A task to build the test runner html file that get place in
