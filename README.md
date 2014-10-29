@@ -41,9 +41,11 @@ To view examples, start the node server. From the root directory:
 You can view the examples at http://localhost:8000/gh_pages.
 
 ## Dependencies
-* ember
-* lodash
 * d3
+* ember
+* jquery
+* jquery-ui
+* lodash
 
 ## Contributing
 
