@@ -1,6 +1,6 @@
 {
   "name": "ember-charts",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "homepage": "http://addepar.github.io/#/ember-charts/overview",
   "description": "A beautiful and easily extensible chart suite built with D3.js and Ember.js",
   "authors": [
